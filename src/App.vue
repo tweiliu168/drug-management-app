@@ -179,6 +179,7 @@ export default {
       showEditDialog: false,
       editingId: undefined,
       search: '',
+      id: 0,
       drugData: mock_data,
       cabinetData: [],
       rules: {
@@ -214,7 +215,7 @@ export default {
   methods: {
     handleEdit(index, row) {
       this.showEditDialog = true;
-      this.editingId = index;
+      this.editingId = row.id;
       this.editForm.name = row.name;
       this.editForm.side_effect = row.side_effect;
       this.editForm.effectiveness = row.effectiveness;
@@ -226,8 +227,10 @@ export default {
     create(formName) {
       this.$refs[formName].validate((valid) => {
         if (valid) {
+          this.createForm.id = this.id;
           this.cabinetData.push(this.createForm);
           this.showCreateDialog = false;
+          this.id += 1;
           this.$message.success('success');
         } else {
           console.log('error submit!!');
@@ -238,10 +241,15 @@ export default {
     edit(formName) {
       this.$refs[formName].validate((valid) => {
         if (valid) {
-          this.cabinetData[this.editingId].name = this.editForm.name
-          this.cabinetData[this.editingId].side_effect = this.editForm.side_effect
-          this.cabinetData[this.editingId].effectiveness = this.editForm.effectiveness
-          this.cabinetData[this.editingId].comment = this.editForm.comment
+          this.cabinetData.map( drug => {
+            if(drug.id == this.editingId) {
+              drug.name = this.editForm.name;
+              drug.side_effect = this.editForm.side_effect;
+              drug.effectiveness = this.editForm.effectiveness;
+              drug.comment = this.editForm.comment;
+            }
+            return drug;
+          })
           this.showEditDialog = false;
           this.$message.success('success')
         } else {
