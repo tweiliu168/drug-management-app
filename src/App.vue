@@ -89,7 +89,7 @@
                   <el-button
                     size="mini"
                     type="danger"
-                    @click="handleDelete(scope.$index, cabinetData)"><i class="el-icon-delete"></i></el-button>
+                    @click="handleDelete(scope.$index, scope.row)"><i class="el-icon-delete"></i></el-button>
                 </template>
               </el-table-column>
             </el-table>
@@ -157,7 +157,6 @@
         <template #footer>
           <span class="dialog-footer">
             <el-button @click="showEditDialog = false">Cancel</el-button>
-            <el-button @click="resetForm('editForm')">Reset</el-button>
             <el-button type="primary" @click="edit('editForm')">Confirm</el-button>
           </span>
         </template>
@@ -222,7 +221,12 @@ export default {
       this.editForm.comment = row.comment;
     },
     handleDelete(index, row) {
-      row.splice(index, 1);
+      this.cabinetData.forEach( drug => {
+        if (drug.id == row.id) {
+          index = this.cabinetData.indexOf(drug);
+        }
+      })
+      this.cabinetData.splice(index, 1);
     },
     create(formName) {
       this.$refs[formName].validate((valid) => {
