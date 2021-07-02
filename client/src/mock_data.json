@@ -1,0 +1,78 @@
+[
+    {
+        "name": "drug1",
+        "side_effect": "Headache",
+        "effectiveness": "very effective",
+        "comment": "this is a super super long comment"
+    }, {
+        "name": "drug2",
+        "side_effect": "Headache",
+        "effectiveness": "very effective",
+        "comment": "this is a longer comment"
+    }, {
+        "name": "drug3",
+        "side_effect": "Headache",
+        "effectiveness": "very effective",
+        "comment": "this is a longer comment"
+    }, {
+        "name": "drug4",
+        "side_effect": "Headache",
+        "effectiveness": "very effective",
+        "comment": "this is a longer comment"
+    }, {
+        "name": "drug5",
+        "side_effect": "Headache",
+        "effectiveness": "very effective",
+        "comment": "this is a longer comment"
+    }, {
+        "name": "drug6",
+        "side_effect": "Headache",
+        "effectiveness": "very effective",
+        "comment": "this is a longer comment"
+    }, {
+        "name": "drug7",
+        "side_effect": "Headache",
+        "effectiveness": "very effective",
+        "comment": "this is a longer comment"
+    }, {
+        "name": "drug8",
+        "side_effect": "Headache",
+        "effectiveness": "very effective",
+        "comment": "this is a longer comment"
+    }, {
+        "name": "drug9",
+        "side_effect": "Headache",
+        "effectiveness": "very effective",
+        "comment": "this is a longer comment"
+    }, {
+        "name": "drug10",
+        "side_effect": "Headache",
+        "effectiveness": "very effective",
+        "comment": "this is a longer comment"
+    }, {
+        "name": "drug11",
+        "side_effect": "Headache",
+        "effectiveness": "very effective",
+        "comment": "this is a longer comment"
+    }, {
+        "name": "drug12",
+        "side_effect": "Headache",
+        "effectiveness": "very effective",
+        "comment": "this is a longer comment"
+    }, {
+        "name": "drug13",
+        "side_effect": "Headache",
+        "effectiveness": "very effective",
+        "comment": "this is a longer comment"
+    }, {
+        "name": "drug14",
+        "side_effect": "Headache",
+        "effectiveness": "very effective",
+        "comment": "this is a longer comment"
+    }, {
+        "name": "drug15",
+        "side_effect": "Headache",
+        "effectiveness": "very effective",
+        "comment": "this is a longer comment"
+    }
+]

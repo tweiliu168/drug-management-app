@@ -1,1 +1,1 @@
-# drug-management-app
+# Drug Management Vue App
