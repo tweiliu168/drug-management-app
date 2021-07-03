@@ -187,10 +187,10 @@ export default {
           { message: 'Name cannot be empty', trigger: 'blur' }
         ],
         side_effect: [
-          { required: true, type: 'number', min: 1, max: 5, message: 'Side Effect Rating should be between 1 to 5', trigger: 'blur' }
+          { required: true, type: 'number', min: 1, max: 5, message: 'Rating should be between 1 to 5', trigger: 'blur' }
         ],
         effectiveness: [
-          { required: true, type: 'number', min: 1, max: 5, message: 'Effectiveness Rating should be between 1 to 5', trigger:'blur'},
+          { required: true, type: 'number', min: 1, max: 5, message: 'Rating should be between 1 to 5', trigger:'blur'},
         ],
         comment: [
           { required: true, message: 'Please input Comment', trigger: 'blur' }
