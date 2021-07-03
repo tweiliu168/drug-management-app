@@ -61,14 +61,14 @@
               <el-table-column
                 prop="side_effect"
                 label="Side Effect"
-                :min-width="40"
+                :min-width="50"
                 sortable
               >
               </el-table-column>
               <el-table-column
                 prop="effectiveness"
                 label="Effectiveness"
-                min-width="40"
+                :min-width="55"
                 sortable
               >
               </el-table-column>
@@ -80,7 +80,7 @@
               <el-table-column
                 prop="operations"
                 label="Operations"
-                :min-width="50"
+                :min-width="60"
               >
                 <template #default="scope">
                   <el-button
